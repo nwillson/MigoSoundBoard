@@ -52,3 +52,45 @@ html {
     letter-spacing: .1rem;
     color: black;
   }
+
+  .migosPics {
+    display: flex;
+    flex-direction: row;
+    height: 250px;
+    background-position: center;
+    margin: 0 auto;
+    justify-content: center;
+    margin-right: 200px;
+    margin-top: 100px;
+  }
+
+  #quavo, #takeoff, #offset{
+    margin-left: 100px;
+    animation-name: quavo;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+
+  @-webkit-keyframes quavo {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transform-origin: 100%;
+      transform-origin: 100%;
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+      -webkit-transform-origin: 100%;
+      transform-origin: 100%;
+    }
+  }
+
+
+  #takeoff {
+    margin-left: 100px;
+  }
+
+  #offset {
+    margin-left: 100px;
+  }

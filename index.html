@@ -8,6 +8,15 @@
 </head>
 
 <body>
+  <div class = "migosPics">
+
+  
+
+    <div id = "quavo"><img src="https://i.ibb.co/HB4t2WQ/quavo.jpg"></div>
+    <div id = "takeoff"><img src="https://i.ibb.co/jfZHZt9/takeoff.jpg"></div>
+    <div id = "offset"><img src="https://i.ibb.co/K6BJ88p/offset.jpg"></div>
+  
+  </div>
 
 
   <div class="keys">
@@ -85,6 +94,30 @@
   </script>
 
 
+
+
+
+<script>
+
+const quavo = document.querySelector(`quavo`);
+const takeoff = document.querySelector(`takeoff`);
+const offset = document.querySelector(`offset`);
+
+function setTime() {
+  const now = new Date();
+
+  const seconds = now.getSeconds();
+  const secondsDegrees = (seconds / 4);
+  quavo.style.transform = `rotate(${secondsDegrees}deg)`;
+
+
+}
+
+setInterval(setDate, 1000);
+
+setDate();
+
+</script>
 </body>
 
 </html>
